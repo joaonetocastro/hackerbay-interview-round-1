@@ -1,6 +1,7 @@
 const express = require('express');
 const jwt = require('./jwt');
-const {LoginController, JsonPatchController, ThumbnailController} = require('./controllers');
+const { LoginController, JsonPatchController, ThumbnailController } = require('./controllers');
+
 const routes = express.Router();
 
 routes.post('/login', LoginController.index);

@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "mocha --temout 15000"
+    "start": "node index.js",
+    "test": "mocha --temout 15000",
+    "lint": "npx eslint . || exit 0",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,8 +20,13 @@
     "nodemon": "^2.0.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
     "chai": "^4.2.0",
-    "mocha": "^7.1.1",
-    "chai-http": "^4.3.0"
+    "chai-http": "^4.3.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "mocha": "^7.1.1"
   }
 }

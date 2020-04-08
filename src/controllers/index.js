@@ -5,5 +5,5 @@ const ThumbnailController = require('./ThumbnailController');
 module.exports = {
   LoginController,
   JsonPatchController,
-  ThumbnailController
+  ThumbnailController,
 };
