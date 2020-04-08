@@ -7,7 +7,7 @@ const {expect} = chai;
 chai.use(chaiHttp);
 // require(user AND password); return JWT; return error; 
 describe('login', () => {
-  it('Should send the data to login', (done) =>{
+  it('Should receive user AND password to login', (done) =>{
     chai.request(app)
     .post('/login')
     .end((err, res) => {
