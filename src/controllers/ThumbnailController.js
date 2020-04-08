@@ -2,7 +2,7 @@ const Jimp = require('jimp');
 module.exports = {
   index(req, res){
     const {url} = req.body;
-    if(!url || url === ''){
+    if(!url || url === '' || typeof url !== 'string'){
       return res.status(400).send({err: "You should send a image URL"})
     }
     Jimp.read(url, (err, img) => {

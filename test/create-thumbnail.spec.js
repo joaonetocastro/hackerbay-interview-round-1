@@ -45,6 +45,16 @@ describe('Create Thumbnail Route', () => {
       done();
     });
   });
+  it('should return status 400 if url isn\'t a string', done => {
+    chai.request(app)
+    .get('/create-thumbnail')
+    .set('x-access-token', validToken)
+    .send({url: []})
+    .end((err, res) => {
+      expect(res).to.have.status(400);
+      done();
+    });
+  });
   it('Should send a Html if image is valid', (done) => {
     chai.request(app)
     .get('/create-thumbnail')
