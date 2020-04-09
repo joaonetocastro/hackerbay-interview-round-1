@@ -3,6 +3,8 @@ This application is served on the port 3333
 
 NOTE: the tokens used here as examples may be expired at the time you test this application, so you should generate your own tokens
 
+The link to the docker image on DockerHub is https://hub.docker.com/r/joaonetocastro/round1
+
 It consists in tree routes:
 1. localhost:3333/login; type: POST
   This route handles the login, it receives a json with a
