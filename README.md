@@ -3,6 +3,11 @@ This application is served on the port 3333
 
 NOTE: the tokens used here as examples may be expired at the time you test this application, so you should generate your own tokens
 
+to run this app you should clone this repository, then run npm install
+to run the server you should run: npm start
+to run the tests you should run: npm test
+to verify the linting you should run: npm run lint
+
 The link to the docker image on DockerHub is https://hub.docker.com/r/joaonetocastro/round1
 
 It consists in tree routes:
